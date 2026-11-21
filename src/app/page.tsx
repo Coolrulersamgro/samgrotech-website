@@ -664,7 +664,7 @@ export default function Home() {
           </p>
 
           <p className="text-xs text-slate-600">
-            © {© 2026 samgroTech Solutions.} samgroTech Solutions.
+            © 2026 samgroTech Solutions.
           </p>
 
         </div>
