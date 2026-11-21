@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "bBc2eBHfAbB3iSFr5WwIGSA5X41Qlx__p09DMeAWpTo",
+  },
   metadataBase: new URL(
     "https://samgrotech-website-git-main-growthersamuel-7753.vercel.app"
   ),
