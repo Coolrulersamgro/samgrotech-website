@@ -5,18 +5,16 @@ const siteUrl = "https://samgrotech-website.vercel.app";
 const profileUrl = `${siteUrl}/samuel-growther`;
 
 export const metadata: Metadata = {
-  title: "Samuel Growther | Founder of SamgroTech Solutions",
+  title: "Samuel Growther | IT Professional & Founder of SamgroTech Solutions",
   description:
-    "Meet Samuel Growther, Founder of SamgroTech Solutions in Kenya. IT professional with a Diploma in Information Technology from MMUST and currently pursuing a Bachelor's degree in Information Technology.",
-  alternates: {
-    canonical: profileUrl,
-  },
+    "Discover Samuel Growther, a Kenyan IT professional, technology builder and Founder of SamgroTech Solutions. Explore his education, experience, skills and projects.",
+  alternates: { canonical: profileUrl },
   openGraph: {
     type: "profile",
     url: profileUrl,
     title: "Samuel Growther | Founder of SamgroTech Solutions",
     description:
-      "Professional profile, education, skills and technology projects by Samuel Growther.",
+      "Professional profile, education, experience and technology projects by Samuel Growther.",
     siteName: "samgroTech Solutions",
     locale: "en_KE",
   },
@@ -24,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Samuel Growther | Founder of SamgroTech Solutions",
     description:
-      "Founder of SamgroTech Solutions | Information Technology | Software and web projects",
+      "IT professional, technology builder and Founder of SamgroTech Solutions in Kenya.",
   },
 };
 
@@ -68,48 +66,80 @@ const person = {
 const skills = [
   "Web development",
   "Software development",
-  "Information technology support",
+  "IT support",
   "Computer networking",
-  "Cybersecurity fundamentals",
+  "Cybersecurity",
   "Graphic design",
-  "Business technology solutions",
+  "Business technology",
   "Field data collection",
 ];
 
 const projects = [
   {
+    number: "01",
     name: "samgroTech Solutions",
-    type: "Technology services website",
+    type: "Technology services",
     description:
-      "A business website presenting web development, software, IT and networking, cybersecurity, and digital business services.",
-    status: "Live website",
+      "A digital home for web development, software, IT support, networking, cybersecurity and practical business technology services.",
+    status: "Live",
+    live: true,
   },
   {
+    number: "02",
     name: "SENTINEL",
-    type: "Security intelligence dashboard",
+    type: "Security intelligence",
     description:
-      "A cybersecurity monitoring project focused on system information, network monitoring, incidents and activity logs.",
+      "A cybersecurity monitoring dashboard concept covering system information, network monitoring, incidents and activity logs.",
     status: "In development",
+    live: false,
   },
   {
+    number: "03",
     name: "Dallas",
-    type: "Business finance and accounting application",
+    type: "Business finance & accounting",
     description:
-      "A business-focused application concept for recording daily sales, expenses and financial activity.",
+      "A business-focused application for recording daily sales, expenses and financial activity with clear reporting.",
     status: "In development",
+    live: false,
   },
   {
+    number: "04",
     name: "Paid Wi-Fi Hotspot System",
-    type: "Connectivity and payment project",
+    type: "Connectivity & payments",
     description:
-      "A hotspot business project exploring customer access packages and M-Pesa payment workflows.",
+      "A hotspot business project exploring access packages and M-Pesa payment workflows.",
     status: "In development",
+    live: false,
   },
 ];
 
+function SectionHeading({
+  eyebrow,
+  title,
+  detail,
+}: {
+  eyebrow: string;
+  title: string;
+  detail?: string;
+}) {
+  return (
+    <div className="mb-7">
+      <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-cyan-300">
+        {eyebrow}
+      </p>
+      <h2 className="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+        {title}
+      </h2>
+      {detail ? (
+        <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-400">{detail}</p>
+      ) : null}
+    </div>
+  );
+}
+
 export default function SamuelGrowtherPage() {
   return (
-    <main className="min-h-screen bg-[#080f20] text-white">
+    <main className="min-h-screen overflow-hidden bg-[#070b16] text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -117,123 +147,140 @@ export default function SamuelGrowtherPage() {
         }}
       />
 
-      <header className="border-b border-white/10 bg-[#080f20]/95">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-          <Link href="/" className="text-sm font-bold tracking-wide text-cyan-300">
-            samgroTech Solutions
+      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(ellipse_at_15%_0%,rgba(14,165,233,0.12),transparent_35%),radial-gradient(ellipse_at_90%_15%,rgba(99,102,241,0.12),transparent_30%)]" />
+
+      <header className="relative z-10 border-b border-white/[0.08] bg-[#070b16]/80 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+          <Link href="/" className="flex items-center gap-3">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-300 to-blue-500 text-xs font-black text-slate-950 shadow-lg shadow-cyan-500/20">
+              SG
+            </span>
+            <span className="text-sm font-bold tracking-wide text-white">
+              samgroTech <span className="font-medium text-slate-400">/ profile</span>
+            </span>
           </Link>
           <Link
             href="/"
-            className="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-300"
+            className="rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-slate-200 transition hover:border-cyan-300/60 hover:bg-cyan-300/10 hover:text-cyan-200 sm:text-sm"
           >
-            Back to website
+            Visit SamgroTech <span aria-hidden="true">↗</span>
           </Link>
         </div>
       </header>
 
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="pointer-events-none absolute -left-32 top-0 h-80 w-80 rounded-full bg-blue-600/20 blur-[110px]" />
-        <div className="pointer-events-none absolute -right-32 top-10 h-80 w-80 rounded-full bg-cyan-500/10 blur-[110px]" />
-        <div className="relative mx-auto max-w-5xl px-6 py-20 sm:py-28">
-          <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-center">
-            <div
-              aria-label="Samuel Growther initials"
-              className="flex h-32 w-32 shrink-0 items-center justify-center rounded-[2rem] border border-cyan-300/30 bg-gradient-to-br from-blue-500/25 to-cyan-400/10 text-5xl font-black text-cyan-200 shadow-2xl shadow-blue-950/40"
-            >
-              SG
-            </div>
+      <section className="relative z-0 border-b border-white/[0.08]">
+        <div className="mx-auto max-w-6xl px-5 pb-14 pt-14 sm:px-8 sm:pb-20 sm:pt-20">
+          <div className="grid items-center gap-10 lg:grid-cols-[1fr_280px]">
             <div>
-              <p className="text-xs font-bold tracking-[0.3em] text-cyan-400">
-                PROFESSIONAL PROFILE
-              </p>
-              <h1 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
-                Samuel Growther
+              <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/[0.07] px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-cyan-200">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.8)]" />
+                Professional profile · Kenya
+              </div>
+              <h1 className="mt-6 max-w-3xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                Samuel <span className="bg-gradient-to-r from-cyan-200 via-sky-300 to-blue-400 bg-clip-text text-transparent">Growther.</span>
               </h1>
-              <p className="mt-4 text-lg font-semibold text-slate-300">
-                Founder, samgroTech Solutions
+              <p className="mt-5 text-lg font-semibold text-slate-200 sm:text-xl">
+                IT Professional <span className="text-cyan-400">·</span> Technology Builder <span className="text-cyan-400">·</span> Founder
               </p>
-              <p className="mt-3 max-w-2xl leading-8 text-slate-400">
-                Information Technology professional, technology builder and
-                entrepreneur based in Kenya, interested in creating practical
-                digital solutions for people and businesses.
+              <p className="mt-5 max-w-2xl text-sm leading-8 text-slate-400 sm:text-base">
+                I enjoy turning ideas into useful digital experiences. Through
+                SamgroTech Solutions, I am building practical technology that
+                helps people and businesses work smarter.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href="https://samgrotech-website.vercel.app/"
-                  className="rounded-full bg-blue-600 px-5 py-3 text-sm font-bold transition hover:bg-blue-500"
+                  className="rounded-xl bg-gradient-to-r from-cyan-300 to-blue-500 px-5 py-3 text-sm font-extrabold text-slate-950 shadow-lg shadow-blue-500/20 transition hover:-translate-y-0.5 hover:shadow-cyan-500/20"
                 >
-                  Explore SamgroTech ↗
+                  Explore my company <span aria-hidden="true">↗</span>
                 </a>
                 <a
                   href="https://github.com/Coolrulersamgro"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-white/20 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-300"
+                  className="rounded-xl border border-white/15 bg-white/[0.03] px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-cyan-300/50 hover:bg-white/[0.07]"
                 >
-                  GitHub profile ↗
+                  View GitHub <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </div>
+
+            <div className="relative mx-auto w-full max-w-[260px]">
+              <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-cyan-400/20 to-blue-600/20 blur-2xl" />
+              <div className="relative aspect-square rounded-[2rem] border border-cyan-200/20 bg-gradient-to-br from-[#142a46] via-[#101a30] to-[#0b1020] p-3 shadow-2xl shadow-black/40">
+                <div className="flex h-full flex-col items-center justify-center rounded-[1.5rem] border border-white/10 bg-[radial-gradient(circle_at_50%_25%,rgba(34,211,238,0.18),transparent_45%),linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.01))]">
+                  <span className="text-7xl font-black tracking-[-0.1em] text-white">SG</span>
+                  <span className="mt-3 text-[10px] font-bold uppercase tracking-[0.35em] text-cyan-200">SamgroTech</span>
+                </div>
+              </div>
+              <div className="absolute -bottom-4 -right-3 rounded-2xl border border-white/10 bg-[#111b2d] px-4 py-3 shadow-xl">
+                <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Building</p>
+                <p className="mt-1 text-sm font-bold text-white">Ideas into impact</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-14 grid grid-cols-2 gap-3 border-t border-white/10 pt-7 sm:grid-cols-4 sm:gap-5">
+            {[
+              ["01", "Founder", "SamgroTech Solutions"],
+              ["02", "Education", "Information Technology"],
+              ["03", "Based in", "Kenya"],
+              ["04", "Focus", "Digital solutions"],
+            ].map(([number, label, value]) => (
+              <div key={number} className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4">
+                <p className="text-[10px] font-bold tracking-[0.2em] text-cyan-300">{number} / {label}</p>
+                <p className="mt-2 text-sm font-bold text-white">{value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <div className="mx-auto grid max-w-5xl gap-12 px-6 py-16 lg:grid-cols-[1.4fr_0.8fr]">
-        <div className="space-y-14">
+      <div className="relative mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="min-w-0 space-y-16">
           <section>
-            <p className="text-xs font-bold tracking-[0.25em] text-cyan-400">
-              ABOUT
-            </p>
-            <h2 className="mt-3 text-3xl font-extrabold">About Samuel</h2>
-            <p className="mt-5 leading-8 text-slate-400">
-              Samuel Growther is the Founder of samgroTech Solutions, a
-              Kenya-based technology brand focused on web development,
-              software development, IT support, networking, cybersecurity and
-              business technology solutions. He is interested in using
-              technology to solve practical problems and help businesses
-              improve the way they work.
-            </p>
+            <SectionHeading eyebrow="A little introduction" title="About me" detail="Curiosity, continuous learning and building technology that solves real problems." />
+            <div className="rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.055] to-white/[0.015] p-6 sm:p-8">
+              <p className="text-sm leading-8 text-slate-300 sm:text-base">
+                I am Samuel Growther, Founder of samgroTech Solutions, a
+                Kenya-based technology brand focused on web development,
+                software development, IT support, networking, cybersecurity
+                and business technology solutions. I am passionate about
+                exploring new technologies, developing useful systems and
+                helping businesses improve how they operate.
+              </p>
+              <p className="mt-4 text-sm leading-8 text-slate-400 sm:text-base">
+                My journey combines formal IT education, practical technical
+                exposure and hands-on personal projects. I continue to grow my
+                skills while building solutions with a clear purpose.
+              </p>
+            </div>
           </section>
 
           <section>
-            <p className="text-xs font-bold tracking-[0.25em] text-cyan-400">
-              SELECTED WORK
-            </p>
-            <h2 className="mt-3 text-3xl font-extrabold">Projects</h2>
-            <div className="mt-6 grid gap-4">
+            <SectionHeading eyebrow="Selected work" title="Projects & initiatives" detail="A selection of technology ideas and products I am developing." />
+            <div className="grid gap-4 sm:grid-cols-2">
               {projects.map((project) => (
-                <article
-                  key={project.name}
-                  className="rounded-2xl border border-white/10 bg-[#0d192d] p-6"
-                >
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <h3 className="text-xl font-bold">{project.name}</h3>
-                    <span className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                <article key={project.name} className="group rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-[#101d32]">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black tracking-[0.2em] text-cyan-300/70">{project.number}</span>
+                    <span className={`rounded-full px-3 py-1 text-[10px] font-bold ${project.live ? "border border-emerald-300/20 bg-emerald-300/10 text-emerald-200" : "border border-amber-300/15 bg-amber-300/[0.07] text-amber-100"}`}>
                       {project.status}
                     </span>
                   </div>
-                  <p className="mt-2 text-sm font-semibold text-blue-300">
-                    {project.type}
-                  </p>
-                  <p className="mt-3 text-sm leading-7 text-slate-400">
-                    {project.description}
-                  </p>
+                  <h3 className="mt-7 text-xl font-extrabold text-white transition group-hover:text-cyan-100">{project.name}</h3>
+                  <p className="mt-2 text-xs font-bold uppercase tracking-[0.13em] text-blue-300">{project.type}</p>
+                  <p className="mt-4 text-sm leading-7 text-slate-400">{project.description}</p>
                 </article>
               ))}
             </div>
           </section>
 
           <section>
-            <p className="text-xs font-bold tracking-[0.25em] text-cyan-400">
-              PROFESSIONAL INTERESTS
-            </p>
-            <h2 className="mt-3 text-3xl font-extrabold">Skills &amp; areas</h2>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <SectionHeading eyebrow="What I work with" title="Skills & interests" detail="Areas I have studied, practised and continue to develop." />
+            <div className="flex flex-wrap gap-2.5">
               {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-slate-300"
-                >
+                <span key={skill} className="rounded-xl border border-cyan-200/10 bg-cyan-200/[0.045] px-4 py-2.5 text-sm font-medium text-slate-200 transition hover:border-cyan-200/30 hover:bg-cyan-200/10">
                   {skill}
                 </span>
               ))}
@@ -241,89 +288,79 @@ export default function SamuelGrowtherPage() {
           </section>
         </div>
 
-        <aside className="space-y-6">
-          <section className="rounded-2xl border border-white/10 bg-[#0d192d] p-6">
-            <p className="text-xs font-bold tracking-[0.25em] text-cyan-400">
-              EDUCATION
-            </p>
-            <div className="mt-5">
-              <h2 className="text-lg font-bold">
-                Bachelor&apos;s Degree in Information Technology
-              </h2>
-              <p className="mt-2 text-sm leading-6 text-slate-400">
-                Currently pursuing
+        <aside className="space-y-5">
+          <section className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6 shadow-xl shadow-black/10">
+            <SectionHeading eyebrow="Learning journey" title="Education" />
+            <div className="relative space-y-7 before:absolute before:bottom-2 before:left-[5px] before:top-2 before:w-px before:bg-gradient-to-b before:from-cyan-300/70 before:to-blue-500/10">
+              <div className="relative pl-6">
+                <span className="absolute left-0 top-1.5 h-3 w-3 rounded-full border-2 border-cyan-200 bg-[#0d1526]" />
+                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-300">Currently pursuing</p>
+                <h3 className="mt-2 text-base font-bold text-white">Bachelor&apos;s Degree</h3>
+                <p className="mt-1 text-sm leading-6 text-slate-400">Information Technology</p>
+              </div>
+              <div className="relative pl-6">
+                <span className="absolute left-0 top-1.5 h-3 w-3 rounded-full border-2 border-blue-300 bg-[#0d1526]" />
+                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-blue-300">Completed studies</p>
+                <h3 className="mt-2 text-base font-bold text-white">Diploma in IT</h3>
+                <p className="mt-1 text-sm leading-6 text-slate-400">Masinde Muliro University of Science and Technology (MMUST)</p>
+                <p className="mt-2 text-xs text-slate-500">Awaiting graduation</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6">
+            <SectionHeading eyebrow="Professional experience" title="Experience" />
+            <div className="border-l border-cyan-300/30 pl-4">
+              <h3 className="font-bold text-white">IT Industrial Attachment</h3>
+              <p className="mt-1 text-sm font-semibold text-cyan-200">Kenya Revenue Authority (KRA)</p>
+              <p className="mt-3 text-sm leading-7 text-slate-400">
+                Practical exposure to IT support, computer and printer
+                troubleshooting, networking tasks and technical
+                problem-solving.
               </p>
             </div>
-            <div className="my-6 border-t border-white/10" />
-            <div>
-              <h3 className="font-bold">
-                Diploma in Information Technology
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-slate-400">
-                Masinde Muliro University of Science and Technology (MMUST)
-              </p>
-              <p className="mt-2 text-xs text-slate-500">
-                Completed; awaiting graduation
+            <div className="mt-6 border-t border-white/[0.08] pt-5">
+              <h3 className="font-bold text-white">Field Data Collection</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-400">
+                Experience supporting field data collection activities.
               </p>
             </div>
           </section>
 
-          <section className="rounded-2xl border border-white/10 bg-[#0d192d] p-6">
-            <p className="text-xs font-bold tracking-[0.25em] text-cyan-400">
-              PERSONAL DETAILS
-            </p>
-            <h2 className="mt-3 text-lg font-bold">Date of Birth</h2>
-            <p className="mt-2 text-sm text-slate-400">10 July 2004</p>
+          <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-[#12304a] via-[#10233b] to-[#10182a] p-6 shadow-xl shadow-cyan-950/20">
+            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-cyan-200">Personal details</p>
+            <h2 className="mt-3 text-lg font-extrabold text-white">A little about Samuel</h2>
+            <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4">
+              <span className="text-sm text-slate-400">Date of birth</span>
+              <span className="text-sm font-semibold text-white">10 July 2004</span>
+            </div>
+            <div className="mt-3 flex items-center justify-between">
+              <span className="text-sm text-slate-400">Country</span>
+              <span className="text-sm font-semibold text-white">Kenya</span>
+            </div>
           </section>
 
-          <section className="rounded-2xl border border-white/10 bg-[#0d192d] p-6">
-            <p className="text-xs font-bold tracking-[0.25em] text-cyan-400">
-              EXPERIENCE
-            </p>
-            <h2 className="mt-3 text-lg font-bold">
-              IT Industrial Attachment
-            </h2>
-            <p className="mt-2 text-sm text-slate-400">
-              Kenya Revenue Authority (KRA)
-            </p>
+          <section className="rounded-3xl border border-blue-300/20 bg-white/[0.025] p-6">
+            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-cyan-300">The company</p>
+            <h2 className="mt-3 text-xl font-black text-white">samgroTech Solutions</h2>
             <p className="mt-3 text-sm leading-7 text-slate-400">
-              Practical exposure to IT support activities, computer and printer
-              troubleshooting, networking tasks and technical problem-solving.
+              Technology that moves your business forward. Building modern
+              digital experiences and practical solutions for businesses.
             </p>
-            <div className="my-5 border-t border-white/10" />
-            <h3 className="font-bold">Field Data Collection</h3>
-            <p className="mt-2 text-sm leading-7 text-slate-400">
-              Experience supporting field data collection activities.
-            </p>
-          </section>
-
-          <section className="rounded-2xl border border-blue-300/20 bg-gradient-to-br from-[#142b50] to-[#0d192d] p-6">
-            <p className="text-xs font-bold tracking-[0.25em] text-cyan-300">
-              BUSINESS
-            </p>
-            <h2 className="mt-3 text-xl font-extrabold">
-              samgroTech Solutions
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-slate-300">
-              Founder of a technology brand delivering digital experiences
-              and practical technology solutions.
-            </p>
-            <a
-              href="https://samgrotech-website.vercel.app/"
-              className="mt-5 inline-flex text-sm font-bold text-cyan-300 hover:text-white"
-            >
-              Visit business website →
+            <a href={siteUrl} className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-cyan-200 transition hover:text-white">
+              Visit company website <span aria-hidden="true">↗</span>
             </a>
           </section>
         </aside>
       </div>
 
-      <footer className="border-t border-white/10 bg-[#060b16]">
-        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <span>© 2026 Samuel Growther</span>
-          <Link href="/" className="font-semibold text-cyan-300 hover:text-white">
-            samgroTech Solutions
-          </Link>
+      <footer className="relative border-t border-white/[0.08] bg-[#050811]">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <p>© 2026 Samuel Growther. All rights reserved.</p>
+          <div className="flex flex-wrap gap-5">
+            <a href="https://github.com/Coolrulersamgro" target="_blank" rel="noopener noreferrer" className="transition hover:text-cyan-200">GitHub</a>
+            <Link href="/" className="transition hover:text-cyan-200">SamgroTech Solutions</Link>
+          </div>
         </div>
       </footer>
     </main>
