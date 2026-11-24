@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://samgrotech-website.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://samgrotech-website-git-main-growthersamuel-7753.vercel.app"
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "samgroTech Solutions | Technology That Moves Your Business Forward",
     template: "%s | samgroTech Solutions",
@@ -26,6 +26,8 @@ export const metadata: Metadata = {
   applicationName: "samgroTech Solutions",
   keywords: [
     "samgroTech Solutions",
+    "Samuel Growther",
+    "Founder of samgroTech Solutions",
     "Web Development Kenya",
     "Software Development Kenya",
     "IT Support Kenya",
@@ -34,8 +36,11 @@ export const metadata: Metadata = {
     "Business Technology Solutions",
     "Website Design Kenya",
   ],
-  authors: [{ name: "samgroTech Solutions" }],
-  creator: "samgroTech Solutions",
+  authors: [
+    { name: "Samuel Growther", url: "https://samgrotech-website.vercel.app/samuel-growther" },
+    { name: "samgroTech Solutions", url: siteUrl },
+  ],
+  creator: "Samuel Growther",
   openGraph: {
     type: "website",
     locale: "en_KE",
