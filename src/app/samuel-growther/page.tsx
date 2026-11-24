@@ -37,6 +37,7 @@ const person = {
     "@type": "Person",
     "@id": `${profileUrl}#person`,
     name: "Samuel Growther",
+    birthDate: "2004-07-10",
     url: profileUrl,
     jobTitle: "Founder",
     worksFor: {
@@ -265,6 +266,14 @@ export default function SamuelGrowtherPage() {
                 Completed; awaiting graduation
               </p>
             </div>
+          </section>
+
+          <section className="rounded-2xl border border-white/10 bg-[#0d192d] p-6">
+            <p className="text-xs font-bold tracking-[0.25em] text-cyan-400">
+              PERSONAL DETAILS
+            </p>
+            <h2 className="mt-3 text-lg font-bold">Date of Birth</h2>
+            <p className="mt-2 text-sm text-slate-400">10 July 2004</p>
           </section>
 
           <section className="rounded-2xl border border-white/10 bg-[#0d192d] p-6">
