@@ -11,6 +11,7 @@ const navigation = [
   ["Services", "#services"],
   ["Pricing", "#pricing"],
   ["Projects", "#projects"],
+  ["Founder", "/samuel-growther"],
   ["Contact", "#contact"],
 ];
 
