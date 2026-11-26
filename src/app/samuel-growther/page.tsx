@@ -30,7 +30,7 @@ const person = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
   dateCreated: "2026-11-24",
-  dateModified: "2026-11-24",
+  dateModified: "2026-11-26",
   mainEntity: {
     "@type": "Person",
     "@id": `${profileUrl}#person`,
@@ -59,7 +59,10 @@ const person = {
       "Business Technology Solutions",
       "Graphic Design",
     ],
-    sameAs: ["https://github.com/Coolrulersamgro"],
+    sameAs: [
+      "https://www.linkedin.com/in/samuel-growther",
+      "https://github.com/Coolrulersamgro",
+    ],
   },
 };
 
@@ -358,6 +361,7 @@ export default function SamuelGrowtherPage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>© 2026 Samuel Growther. All rights reserved.</p>
           <div className="flex flex-wrap gap-5">
+            <a href="https://www.linkedin.com/in/samuel-growther" target="_blank" rel="noopener noreferrer" className="transition hover:text-cyan-200">LinkedIn</a>
             <a href="https://github.com/Coolrulersamgro" target="_blank" rel="noopener noreferrer" className="transition hover:text-cyan-200">GitHub</a>
             <Link href="/" className="transition hover:text-cyan-200">SamgroTech Solutions</Link>
           </div>
