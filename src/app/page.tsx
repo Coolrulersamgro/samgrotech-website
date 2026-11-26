@@ -330,6 +330,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOUNDER PROFILE */}
+      <section
+        id="founder"
+        aria-labelledby="founder-heading"
+        className="scroll-mt-24 border-y border-white/10 bg-[#0a1426]"
+      >
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-16 md:flex-row md:items-center md:justify-between lg:px-10">
+          <div className="max-w-3xl">
+            <div className="text-xs font-bold tracking-[0.3em] text-cyan-400">
+              MEET THE FOUNDER
+            </div>
+            <h2 id="founder-heading" className="mt-4 text-3xl font-extrabold sm:text-4xl">
+              Samuel Growther
+            </h2>
+            <p className="mt-4 max-w-2xl leading-8 text-slate-400">
+              Founder of samgroTech Solutions, an IT professional and technology
+              builder based in Kenya. Learn more about his background, education,
+              experience, skills and technology projects on his professional profile.
+            </p>
+          </div>
+          <a
+            href="/samuel-growther"
+            aria-label="View Samuel Growther's professional profile"
+            className="inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-blue-600 px-7 py-4 text-sm font-bold transition hover:-translate-y-1 hover:bg-blue-500"
+          >
+            View Samuel Growther&apos;s Profile ↗
+          </a>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="services" className="mx-auto max-w-7xl scroll-mt-24 px-6 py-24 lg:px-10">
 
