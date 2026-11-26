@@ -107,6 +107,17 @@ const projects = [
   },
   {
     number: "04",
+    name: "SamgroTech POS",
+    type: "Business management & point of sale",
+    description:
+      "A cloud-based point-of-sale and business management system with product and stock tracking, cash and M-Pesa checkout, digital receipts, sales history, and customer-named credit accounts with partial repayment tracking.",
+    status: "Preview deployed · Testing",
+    live: false,
+    url: "https://samgrotech-pos-git-feature-supabase-b48cf3-growthersamuel-7753.vercel.app",
+    github: "https://github.com/Coolrulersamgro/samgrotech-pos",
+  },
+  {
+    number: "05",
     name: "Paid Wi-Fi Hotspot System",
     type: "Connectivity & payments",
     description:
@@ -274,6 +285,12 @@ export default function SamuelGrowtherPage() {
                   <h3 className="mt-7 text-xl font-extrabold text-white transition group-hover:text-cyan-100">{project.name}</h3>
                   <p className="mt-2 text-xs font-bold uppercase tracking-[0.13em] text-blue-300">{project.type}</p>
                   <p className="mt-4 text-sm leading-7 text-slate-400">{project.description}</p>
+                  {"url" in project && project.url ? (
+                    <div className="mt-5 flex flex-wrap gap-4 border-t border-white/10 pt-4 text-xs font-bold">
+                      <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-cyan-200 hover:text-white">Open preview ↗</a>
+                      {"github" in project && project.github ? <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white">GitHub repository ↗</a> : null}
+                    </div>
+                  ) : null}
                 </article>
               ))}
             </div>
