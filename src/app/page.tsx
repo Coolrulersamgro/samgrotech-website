@@ -730,9 +730,18 @@ export default function Home() {
             />
           </a>
 
-          <p className="text-sm text-slate-500">
-            Technology that moves your business forward.
-          </p>
+          <div className="flex flex-col gap-2 text-sm sm:items-center">
+            <p className="text-slate-500">
+              Technology that moves your business forward.
+            </p>
+            <a
+              href="/samuel-growther"
+              aria-label="Read the biography of Samuel Growther, founder of SamgroTech Solutions"
+              className="font-semibold text-cyan-300 transition hover:text-white"
+            >
+              About Samuel Growther · Founder ↗
+            </a>
+          </div>
 
           <p className="text-xs text-slate-600">
             © 2026 samgroTech Solutions.
