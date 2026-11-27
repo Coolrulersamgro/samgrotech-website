@@ -129,6 +129,46 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#080f20] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://samgrotech-website.vercel.app/#organization",
+                "name": "SamgroTech Solutions",
+                "alternateName": ["samgroTech", "SamgroTech"],
+                "url": "https://samgrotech-website.vercel.app/",
+                "logo": "https://samgrotech-website.vercel.app/images/samgrotech-logo.png",
+                "description": "A Kenya-based technology business focused on web development, software development, IT support, networking, cybersecurity and practical business technology solutions.",
+                "founder": { "@id": "https://samgrotech-website.vercel.app/samuel-growther#person" },
+                "foundingLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "KE" } },
+                "areaServed": ["Kenya", "Worldwide"],
+                "knowsAbout": ["Web development", "Software development", "IT support", "Computer networking", "Cybersecurity", "Business technology"]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://samgrotech-website.vercel.app/#website",
+                "url": "https://samgrotech-website.vercel.app/",
+                "name": "SamgroTech Solutions",
+                "publisher": { "@id": "https://samgrotech-website.vercel.app/#organization" },
+                "inLanguage": "en-KE"
+              },
+              {
+                "@type": "Person",
+                "@id": "https://samgrotech-website.vercel.app/samuel-growther#person",
+                "name": "Samuel Growther",
+                "url": "https://samgrotech-website.vercel.app/samuel-growther",
+                "jobTitle": "Founder of SamgroTech Solutions",
+                "worksFor": { "@id": "https://samgrotech-website.vercel.app/#organization" },
+                "sameAs": ["https://github.com/Coolrulersamgro"]
+              }
+            ]
+          }).replace(/</g, "\\u003c")
+        }}
+      />
 
       {/* HEADER */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080f20]/95 backdrop-blur-xl">
