@@ -220,9 +220,8 @@ export default function SamuelGrowtherPage() {
             <div className="relative mx-auto w-full max-w-[260px]">
               <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-cyan-400/20 to-blue-600/20 blur-2xl" />
               <div className="relative aspect-square rounded-[2rem] border border-cyan-200/20 bg-gradient-to-br from-[#142a46] via-[#101a30] to-[#0b1020] p-3 shadow-2xl shadow-black/40">
-                <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] border border-white/10"><img src="/samuel-growther.jpg" alt="Samuel Growther" className="h-full w-full object-cover object-center" /></div>
-                  <span className="text-7xl font-black tracking-[-0.1em] text-white">SG</span>
-                  <span className="mt-3 text-[10px] font-bold uppercase tracking-[0.35em] text-cyan-200">SamgroTech</span>
+                <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] border border-white/10">
+                  <img src="/samuel-growther.jpg" alt="Samuel Growther" className="h-full w-full object-cover object-center" />
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-3 rounded-2xl border border-white/10 bg-[#111b2d] px-4 py-3 shadow-xl">
