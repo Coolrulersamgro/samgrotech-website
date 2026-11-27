@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Samuel Growther Biography | Founder of SamgroTech Solutions",
   description:
     "Samuel Growther is the founder of SamgroTech Solutions in Kenya. Read his biography, Information Technology education, KRA experience, software projects and entrepreneurial vision.",
-  alternates: { canonical: profileUrl },
+  alternates: { canonical: profileUrl },\n  keywords: ["Samuel Growther", "SamgroTech Solutions", "Samuel Growther biography", "SamgroTech founder", "Kenyan IT entrepreneur", "Information Technology Kenya"],
   openGraph: {
     type: "profile",
     url: profileUrl,
@@ -283,7 +283,7 @@ export default function SamuelGrowtherPage() {
             <SectionHeading eyebrow="Roots & motivation" title="Early life and personal inspiration" detail="The beginnings of Samuel's interest in business and technology." />
             <div className="rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.055] to-white/[0.015] p-6 sm:p-8">
               <p className="text-sm leading-8 text-slate-300 sm:text-base">
-                Born and raised in Kakamega Town, Kenya, Samuel developed an ambition from childhood to become a businessman. His love for computers and dream of becoming a programmer inspired his interest in Information Technology and technology entrepreneurship.
+                Born and raised in Kakamega Town, Kenya, Samuel developed an ambition from childhood to become a businessman. His love for computers and dream of becoming a programmer inspired his interest in Information Technology and technology entrepreneurship. Self-motivation has been a major source of inspiration in his journey, alongside determination and continuous learning.
               </p>
               <p className="mt-4 text-sm leading-8 text-slate-400 sm:text-base">
                 Self-motivation has been a major source of inspiration in his journey. He values determination, continuous learning and the courage to keep pursuing his goals when progress takes time.
