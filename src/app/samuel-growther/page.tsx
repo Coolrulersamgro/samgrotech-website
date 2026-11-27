@@ -30,12 +30,11 @@ const person = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
   dateCreated: "2026-11-24",
-  dateModified: "2026-11-26",
+  dateModified: "2026-11-27",
   mainEntity: {
     "@type": "Person",
     "@id": `${profileUrl}#person`,
     name: "Samuel Growther",
-    birthDate: "2004-07-10",
     url: profileUrl,
     jobTitle: "Founder",
     worksFor: {
@@ -111,9 +110,9 @@ const projects = [
     type: "Business management & point of sale",
     description:
       "A cloud-based point-of-sale and business management system with product and stock tracking, cash and M-Pesa checkout, digital receipts, sales history, and customer-named credit accounts with partial repayment tracking.",
-    status: "Preview deployed · Testing",
-    live: false,
-    url: "https://samgrotech-pos-git-feature-supabase-b48cf3-growthersamuel-7753.vercel.app",
+    status: "Live · Production",
+    live: true,
+    url: "https://samgrotech-pos.vercel.app",
     github: "https://github.com/Coolrulersamgro/samgrotech-pos",
   },
   {
@@ -265,8 +264,100 @@ export default function SamuelGrowtherPage() {
               </p>
               <p className="mt-4 text-sm leading-8 text-slate-400 sm:text-base">
                 My journey combines formal IT education, practical technical
-                exposure and hands-on personal projects. I continue to grow my
-                skills while building solutions with a clear purpose.
+                exposure and hands-on personal projects. I completed a Diploma
+                in Information Technology at Masinde Muliro University of
+                Science and Technology and am now pursuing a Bachelor's Degree
+                in Information Technology. I continue to grow my skills while
+                building solutions with a clear purpose.
+              </p>
+              <p className="mt-4 text-sm leading-8 text-slate-400 sm:text-base">
+                I believe technology is most valuable when it solves everyday
+                challenges. That belief guides the systems I build, the skills
+                I develop and the work I do through SamgroTech Solutions.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <SectionHeading eyebrow="My story" title="Career journey" detail="The learning, practical experience and entrepreneurship shaping my path in technology." />
+            <div className="space-y-4">
+              <article className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">Education foundation</p>
+                <h3 className="mt-2 text-lg font-bold text-white">Building a foundation in Information Technology</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-400">
+                  My formal IT journey at Masinde Muliro University of Science
+                  and Technology gave me a foundation for understanding
+                  technology and applying it to practical challenges. After
+                  completing my Diploma in IT, I continued to a Bachelor's
+                  Degree in the same field.
+                </p>
+              </article>
+              <article className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">Practical experience</p>
+                <h3 className="mt-2 text-lg font-bold text-white">Learning through IT support at KRA</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-400">
+                  During a three-month industrial attachment in the IT
+                  Department at the Kenya Revenue Authority, I gained hands-on
+                  exposure to technical support, printer troubleshooting,
+                  Ethernet cable crimping, networking tasks and resolving
+                  day-to-day IT issues.
+                </p>
+              </article>
+              <article className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">Entrepreneurship</p>
+                <h3 className="mt-2 text-lg font-bold text-white">Starting SamgroTech Solutions</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-400">
+                  I started building SamgroTech as a way to turn my interest
+                  in technology into practical digital services and products.
+                  It is also a space where I can keep learning, experiment with
+                  ideas and create solutions for real business needs.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section>
+            <SectionHeading eyebrow="Milestones" title="Achievements & progress" detail="Key milestones in my education, practical development and technology journey." />
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                ["Academic milestone", "Completed a Diploma in Information Technology at MMUST and progressed to Bachelor's degree studies."],
+                ["Industry exposure", "Completed a three-month IT industrial attachment at the Kenya Revenue Authority."],
+                ["Founder milestone", "Established SamgroTech Solutions as a platform for developing and delivering technology solutions."],
+                ["Product development", "Built and released SamgroTech POS, a business point-of-sale and management system, to production."],
+              ].map(([title, description]) => (
+                <article key={title} className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5">
+                  <h3 className="font-bold text-white">{title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-400">{description}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <SectionHeading eyebrow="Why I build" title="The SamgroTech founder story" detail="Turning a passion for technology into practical work." />
+            <div className="rounded-3xl border border-cyan-200/15 bg-gradient-to-br from-[#10233b] to-[#0d1526] p-6 sm:p-8">
+              <p className="text-sm leading-8 text-slate-300 sm:text-base">
+                SamgroTech Solutions reflects my commitment to learning by
+                building. Through this initiative, I work on websites,
+                business systems and digital tools intended to make everyday
+                operations easier. Each project is an opportunity to apply
+                what I have learned, strengthen my technical ability and
+                understand the needs of the people who use technology.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <SectionHeading eyebrow="Looking ahead" title="Vision & future ambitions" detail="The direction I am working towards." />
+            <div className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6 sm:p-8">
+              <p className="text-sm leading-8 text-slate-300 sm:text-base">
+                My goal is to keep advancing in Information Technology,
+                strengthen my skills through continuous learning and grow
+                SamgroTech Solutions into a trusted technology brand. I want
+                to create reliable software and digital services that address
+                real challenges for individuals and businesses, while
+                contributing positively to the technology space in Kenya and
+                beyond.
               </p>
             </div>
           </section>
@@ -350,10 +441,6 @@ export default function SamuelGrowtherPage() {
           <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-[#12304a] via-[#10233b] to-[#10182a] p-6 shadow-xl shadow-cyan-950/20">
             <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-cyan-200">Personal details</p>
             <h2 className="mt-3 text-lg font-extrabold text-white">A little about Samuel</h2>
-            <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4">
-              <span className="text-sm text-slate-400">Date of birth</span>
-              <span className="text-sm font-semibold text-white">10 July 2004</span>
-            </div>
             <div className="mt-3 flex items-center justify-between">
               <span className="text-sm text-slate-400">Country</span>
               <span className="text-sm font-semibold text-white">Kenya</span>
