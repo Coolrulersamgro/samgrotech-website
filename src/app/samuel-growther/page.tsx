@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     locale: "en_KE",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Biography of Samuel Growther | SamgroTech Founder",
     description:
       "Biography of Samuel Growther, Kenyan technology enthusiast, programmer and Founder of SamgroTech Solutions.",
@@ -220,7 +220,7 @@ export default function SamuelGrowtherPage() {
             <div className="relative mx-auto w-full max-w-[260px]">
               <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-cyan-400/20 to-blue-600/20 blur-2xl" />
               <div className="relative aspect-square rounded-[2rem] border border-cyan-200/20 bg-gradient-to-br from-[#142a46] via-[#101a30] to-[#0b1020] p-3 shadow-2xl shadow-black/40">
-                <div className="flex h-full flex-col items-center justify-center rounded-[1.5rem] border border-white/10 bg-[radial-gradient(circle_at_50%_25%,rgba(34,211,238,0.18),transparent_45%),linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.01))]">
+                <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] border border-white/10"><img src="/samuel-growther.jpg" alt="Samuel Growther" className="h-full w-full object-cover object-center" /></div>
                   <span className="text-7xl font-black tracking-[-0.1em] text-white">SG</span>
                   <span className="mt-3 text-[10px] font-bold uppercase tracking-[0.35em] text-cyan-200">SamgroTech</span>
                 </div>
