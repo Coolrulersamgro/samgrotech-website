@@ -5,9 +5,9 @@ const siteUrl = "https://samgrotech-website.vercel.app";
 const profileUrl = `${siteUrl}/samuel-growther`;
 
 export const metadata: Metadata = {
-  title: "Biography of Samuel Growther | Founder of SamgroTech Solutions",
+  title: "Samuel Growther Biography | Founder of SamgroTech Solutions",
   description:
-    "Read the biography of Samuel Growther, a Kenyan technology enthusiast, aspiring programmer and Founder of SamgroTech Solutions. Discover his background, education, career journey, projects and global ambitions.",
+    "Samuel Growther is the founder of SamgroTech Solutions in Kenya. Read his biography, Information Technology education, KRA experience, software projects and entrepreneurial vision.",
   alternates: { canonical: profileUrl },
   openGraph: {
     type: "profile",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Biography of Samuel Growther | SamgroTech Founder",
     description:
       "The life story, background, education, professional journey and technology ambitions of Samuel Growther.",
-    siteName: "samgroTech Solutions",
+    siteName: "SamgroTech Solutions",
     locale: "en_KE",
   },
   twitter: {
@@ -291,7 +291,7 @@ export default function SamuelGrowtherPage() {
             </div>
           </section>
           <section>
-            <SectionHeading eyebrow="Early life & career" title="Early life and career journey" detail="From childhood ambitions in Kakamega to education, practical experience and technology entrepreneurship." />
+            <SectionHeading eyebrow="Early life & career" title="Education and career journey" detail="From childhood ambitions in Kakamega to education, practical experience and technology entrepreneurship." />
             <div className="space-y-4">
               <article className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">Education foundation</p>
