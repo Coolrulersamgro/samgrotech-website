@@ -39,7 +39,8 @@ const person = {
     jobTitle: "Founder",
     worksFor: {
       "@type": "Organization",
-      name: "samgroTech Solutions",
+      "@id": `${siteUrl}/#organization`,
+      name: "SamgroTech Solutions",
       url: siteUrl,
     },
     description:
