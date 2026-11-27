@@ -5,24 +5,24 @@ const siteUrl = "https://samgrotech-website.vercel.app";
 const profileUrl = `${siteUrl}/samuel-growther`;
 
 export const metadata: Metadata = {
-  title: "Samuel Growther | IT Professional & Founder of SamgroTech Solutions",
+  title: "Biography of Samuel Growther | Founder of SamgroTech Solutions",
   description:
-    "Discover Samuel Growther, a Kenyan IT professional, technology builder and Founder of SamgroTech Solutions. Explore his education, experience, skills and projects.",
+    "Read the biography of Samuel Growther, a Kenyan technology enthusiast, aspiring programmer and Founder of SamgroTech Solutions. Discover his background, education, career journey, projects and global ambitions.",
   alternates: { canonical: profileUrl },
   openGraph: {
     type: "profile",
     url: profileUrl,
-    title: "Samuel Growther | Founder of SamgroTech Solutions",
+    title: "Biography of Samuel Growther | SamgroTech Founder",
     description:
-      "Professional profile, education, experience and technology projects by Samuel Growther.",
+      "The life story, background, education, professional journey and technology ambitions of Samuel Growther.",
     siteName: "samgroTech Solutions",
     locale: "en_KE",
   },
   twitter: {
     card: "summary",
-    title: "Samuel Growther | Founder of SamgroTech Solutions",
+    title: "Biography of Samuel Growther | SamgroTech Founder",
     description:
-      "IT professional, technology builder and Founder of SamgroTech Solutions in Kenya.",
+      "Biography of Samuel Growther, Kenyan technology enthusiast, programmer and Founder of SamgroTech Solutions.",
   },
 };
 
@@ -43,7 +43,7 @@ const person = {
       url: siteUrl,
     },
     description:
-      "Samuel Growther is the Founder of samgroTech Solutions, a Kenya-based technology brand focused on web development, software, IT support, networking and digital solutions.",
+      "Samuel Growther is a Kenyan technology enthusiast, aspiring programmer and entrepreneur born and raised in Kakamega Town. He is the Founder of samgroTech Solutions, a technology brand focused on software, web development, IT support, networking and digital solutions.",
     alumniOf: {
       "@type": "CollegeOrUniversity",
       name: "Masinde Muliro University of Science and Technology",
@@ -187,7 +187,7 @@ export default function SamuelGrowtherPage() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/[0.07] px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-cyan-200">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.8)]" />
-                Professional profile · Kenya
+                Biography · Kenya
               </div>
               <h1 className="mt-6 max-w-3xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
                 Samuel <span className="bg-gradient-to-r from-cyan-200 via-sky-300 to-blue-400 bg-clip-text text-transparent">Growther.</span>
@@ -196,8 +196,8 @@ export default function SamuelGrowtherPage() {
                 IT Professional <span className="text-cyan-400">·</span> Technology Builder <span className="text-cyan-400">·</span> Founder
               </p>
               <p className="mt-5 max-w-2xl text-sm leading-8 text-slate-400 sm:text-base">
-                I enjoy turning ideas into useful digital experiences. Through
-                SamgroTech Solutions, I am building practical technology that
+                Samuel enjoys turning ideas into useful digital experiences. Through
+                SamgroTech Solutions, he is building practical technology that
                 helps people and businesses work smarter.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -252,43 +252,55 @@ export default function SamuelGrowtherPage() {
       <div className="relative mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0 space-y-16">
           <section>
-            <SectionHeading eyebrow="A little introduction" title="About me" detail="Curiosity, continuous learning and building technology that solves real problems." />
+            <SectionHeading eyebrow="Biography" title="About Samuel Growther" detail="His background, interests and commitment to building technology that solves real problems." />
             <div className="rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.055] to-white/[0.015] p-6 sm:p-8">
               <p className="text-sm leading-8 text-slate-300 sm:text-base">
-                I am Samuel Growther, Founder of samgroTech Solutions, a
+                Samuel Growther is the Founder of samgroTech Solutions, a
                 Kenya-based technology brand focused on web development,
                 software development, IT support, networking, cybersecurity
-                and business technology solutions. I am passionate about
+                and business technology solutions. He is passionate about
                 exploring new technologies, developing useful systems and
                 helping businesses improve how they operate.
               </p>
               <p className="mt-4 text-sm leading-8 text-slate-400 sm:text-base">
-                My journey combines formal IT education, practical technical
-                exposure and hands-on personal projects. I completed a Diploma
+                His journey combines formal IT education, practical technical
+                exposure and hands-on personal projects. He completed a Diploma
                 in Information Technology at Masinde Muliro University of
-                Science and Technology and am now pursuing a Bachelor's Degree
-                in Information Technology. I continue to grow my skills while
+                Science and Technology and is now pursuing a Bachelor's Degree
+                in Information Technology. He continues to grow his skills while
                 building solutions with a clear purpose.
               </p>
               <p className="mt-4 text-sm leading-8 text-slate-400 sm:text-base">
-                I believe technology is most valuable when it solves everyday
-                challenges. That belief guides the systems I build, the skills
-                I develop and the work I do through SamgroTech Solutions.
+                Samuel believes technology is most valuable when it solves everyday
+                challenges. That belief guides the systems he builds, the skills
+                he develops and the work he does through SamgroTech Solutions.
               </p>
             </div>
           </section>
 
+
           <section>
-            <SectionHeading eyebrow="My story" title="Career journey" detail="The learning, practical experience and entrepreneurship shaping my path in technology." />
+            <SectionHeading eyebrow="Roots & motivation" title="Early life and personal inspiration" detail="The beginnings of Samuel's interest in business and technology." />
+            <div className="rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.055] to-white/[0.015] p-6 sm:p-8">
+              <p className="text-sm leading-8 text-slate-300 sm:text-base">
+                Born and raised in Kakamega Town, Kenya, Samuel developed an ambition from childhood to become a businessman. His love for computers and dream of becoming a programmer inspired his interest in Information Technology and technology entrepreneurship.
+              </p>
+              <p className="mt-4 text-sm leading-8 text-slate-400 sm:text-base">
+                Self-motivation has been a major source of inspiration in his journey. He values determination, continuous learning and the courage to keep pursuing his goals when progress takes time.
+              </p>
+            </div>
+          </section>
+          <section>
+            <SectionHeading eyebrow="Early life & career" title="Early life and career journey" detail="From childhood ambitions in Kakamega to education, practical experience and technology entrepreneurship." />
             <div className="space-y-4">
               <article className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">Education foundation</p>
                 <h3 className="mt-2 text-lg font-bold text-white">Building a foundation in Information Technology</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-400">
-                  My formal IT journey at Masinde Muliro University of Science
-                  and Technology gave me a foundation for understanding
+                  Samuel's formal IT journey at Masinde Muliro University of Science
+                  and Technology gave him a foundation for understanding
                   technology and applying it to practical challenges. After
-                  completing my Diploma in IT, I continued to a Bachelor's
+                  completing his Diploma in IT, he continued to a Bachelor's
                   Degree in the same field.
                 </p>
               </article>
@@ -297,7 +309,7 @@ export default function SamuelGrowtherPage() {
                 <h3 className="mt-2 text-lg font-bold text-white">Learning through IT support at KRA</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-400">
                   During a three-month industrial attachment in the IT
-                  Department at the Kenya Revenue Authority, I gained hands-on
+                  Department at the Kenya Revenue Authority, Samuel gained hands-on
                   exposure to technical support, printer troubleshooting,
                   Ethernet cable crimping, networking tasks and resolving
                   day-to-day IT issues.
@@ -307,9 +319,9 @@ export default function SamuelGrowtherPage() {
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">Entrepreneurship</p>
                 <h3 className="mt-2 text-lg font-bold text-white">Starting SamgroTech Solutions</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-400">
-                  I started building SamgroTech as a way to turn my interest
+                  Samuel started building SamgroTech as a way to turn his interest
                   in technology into practical digital services and products.
-                  It is also a space where I can keep learning, experiment with
+                  It is also a space where he can keep learning, experiment with
                   ideas and create solutions for real business needs.
                 </p>
               </article>
@@ -334,30 +346,30 @@ export default function SamuelGrowtherPage() {
           </section>
 
           <section>
-            <SectionHeading eyebrow="Why I build" title="The SamgroTech founder story" detail="Turning a passion for technology into practical work." />
+            <SectionHeading eyebrow="Entrepreneurship" title="The SamgroTech founder story" detail="Turning a lifelong business ambition and passion for computers into practical technology work." />
             <div className="rounded-3xl border border-cyan-200/15 bg-gradient-to-br from-[#10233b] to-[#0d1526] p-6 sm:p-8">
               <p className="text-sm leading-8 text-slate-300 sm:text-base">
-                SamgroTech Solutions reflects my commitment to learning by
-                building. Through this initiative, I work on websites,
+                SamgroTech Solutions reflects Samuel's commitment to learning by
+                building. Through this initiative, he works on websites,
                 business systems and digital tools intended to make everyday
                 operations easier. Each project is an opportunity to apply
-                what I have learned, strengthen my technical ability and
+                what he has learned, strengthen his technical ability and
                 understand the needs of the people who use technology.
               </p>
             </div>
           </section>
 
           <section>
-            <SectionHeading eyebrow="Looking ahead" title="Vision & future ambitions" detail="The direction I am working towards." />
+            <SectionHeading eyebrow="Looking ahead" title="Vision & future ambitions" detail="His ambition to grow SamgroTech into a globally recognised technology company." />
             <div className="rounded-3xl border border-white/[0.08] bg-[#0d1526]/90 p-6 sm:p-8">
               <p className="text-sm leading-8 text-slate-300 sm:text-base">
-                My goal is to keep advancing in Information Technology,
-                strengthen my skills through continuous learning and grow
-                SamgroTech Solutions into a trusted technology brand. I want
-                to create reliable software and digital services that address
-                real challenges for individuals and businesses, while
-                contributing positively to the technology space in Kenya and
-                beyond.
+                Samuel's goal is to keep advancing in Information Technology,
+                strengthen his skills through continuous learning and grow
+                SamgroTech Solutions into a globally recognised technology
+                company. He wants to create reliable software and digital
+                services that address real challenges for individuals and
+                businesses, while contributing positively to the technology
+                space in Kenya and beyond.
               </p>
             </div>
           </section>
