@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | samgroTech Solutions",
   },
   description:
-    "samgroTech Solutions provides modern web development, software development, IT and networking, cybersecurity, and business technology solutions in Kenya and beyond.",
+    "Official website of SamgroTech Solutions, founded by Samuel Growther in Kenya. Explore his biography and discover web development, software, IT support, networking and business technology solutions.",
   applicationName: "samgroTech Solutions",
   keywords: [
     "samgroTech Solutions",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "samgroTech Solutions",
     title: "Samuel Growther | Founder of SamgroTech Solutions",
     description:
-      "Modern digital experiences, practical software, and reliable technology solutions for businesses in Kenya and beyond.",
+      "Meet Samuel Growther, founder of SamgroTech Solutions, and explore practical digital and business technology services from Kenya.",
     images: [
       {
         url: "/images/samgrotech-logo.png",
