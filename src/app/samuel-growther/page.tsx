@@ -8,7 +8,8 @@ export const metadata: Metadata = {
   title: "Samuel Growther Biography | Founder of SamgroTech Solutions",
   description:
     "Samuel Growther is the founder of SamgroTech Solutions in Kenya. Read his biography, Information Technology education, KRA experience, software projects and entrepreneurial vision.",
-  alternates: { canonical: profileUrl },\n  keywords: ["Samuel Growther", "SamgroTech Solutions", "Samuel Growther biography", "SamgroTech founder", "Kenyan IT entrepreneur", "Information Technology Kenya"],
+  alternates: { canonical: profileUrl },
+  keywords: ["Samuel Growther", "SamgroTech Solutions", "Samuel Growther biography", "SamgroTech founder", "Kenyan IT entrepreneur", "Information Technology Kenya"],
   openGraph: {
     type: "profile",
     url: profileUrl,
