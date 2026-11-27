@@ -18,7 +18,7 @@ const siteUrl = "https://samgrotech-website.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "samgroTech Solutions | Technology That Moves Your Business Forward",
+    default: "Samuel Growther | Founder of SamgroTech Solutions",
     template: "%s | samgroTech Solutions",
   },
   description:
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     locale: "en_KE",
     url: "/",
     siteName: "samgroTech Solutions",
-    title: "samgroTech Solutions | Technology That Moves Your Business Forward",
+    title: "Samuel Growther | Founder of SamgroTech Solutions",
     description:
       "Modern digital experiences, practical software, and reliable technology solutions for businesses in Kenya and beyond.",
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "samgroTech Solutions | Technology That Moves Your Business Forward",
+    title: "Samuel Growther | SamgroTech Solutions",
     description:
       "Modern digital experiences, practical software, and reliable technology solutions.",
     images: ["/images/samgrotech-logo.png"],
