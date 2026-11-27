@@ -58,10 +58,7 @@ const person = {
       "Business Technology Solutions",
       "Graphic Design",
     ],
-    sameAs: [
-      "https://www.linkedin.com/in/samuel-growther",
-      "https://github.com/Coolrulersamgro",
-    ],
+    sameAs: ["https://github.com/Coolrulersamgro"],
   },
 };
 
