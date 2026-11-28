@@ -161,9 +161,19 @@ export default function Home() {
                 "@id": "https://samgrotech-website.vercel.app/samuel-growther#person",
                 "name": "Samuel Growther",
                 "url": "https://samgrotech-website.vercel.app/samuel-growther",
+                "image": "https://samgrotech-website.vercel.app/samuel-growther.jpg",
+                "description": "Samuel Growther is the founder of SamgroTech Solutions, an IT professional and technology builder based in Kenya. He completed a Diploma in Information Technology at Masinde Muliro University of Science and Technology and is currently pursuing a Bachelor's Degree in Information Technology.",
                 "jobTitle": "Founder of SamgroTech Solutions",
                 "worksFor": { "@id": "https://samgrotech-website.vercel.app/#organization" },
-                "sameAs": ["https://github.com/Coolrulersamgro"]
+                "alumniOf": {
+                  "@type": "CollegeOrUniversity",
+                  "name": "Masinde Muliro University of Science and Technology"
+                },
+                "knowsAbout": ["Information Technology", "Web Development", "Software Development", "IT Support", "Computer Networking", "Cybersecurity", "Business Technology Solutions", "Graphic Design"],
+                "sameAs": [
+                  "https://github.com/Coolrulersamgro",
+                  "https://www.linkedin.com/in/samuel-growther"
+                ]
               }
             ]
           }).replace(/</g, "\\u003c")
