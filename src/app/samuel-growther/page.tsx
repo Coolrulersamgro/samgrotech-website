@@ -31,7 +31,7 @@ const person = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
   dateCreated: "2026-11-24",
-  dateModified: "2026-11-27",
+  dateModified: "2026-11-28",
   mainEntity: {
     "@type": "Person",
     "@id": `${profileUrl}#person`,
@@ -46,6 +46,7 @@ const person = {
     },
     description:
       "Samuel Growther is a Kenyan technology enthusiast, aspiring programmer and entrepreneur born and raised in Kakamega Town. He is the Founder of samgroTech Solutions, a technology brand focused on software, web development, IT support, networking and digital solutions.",
+    image: `${siteUrl}/samuel-growther.jpg`,
     alumniOf: {
       "@type": "CollegeOrUniversity",
       name: "Masinde Muliro University of Science and Technology",
@@ -60,7 +61,10 @@ const person = {
       "Business Technology Solutions",
       "Graphic Design",
     ],
-    sameAs: ["https://github.com/Coolrulersamgro"],
+    sameAs: [
+      "https://github.com/Coolrulersamgro",
+      "https://www.linkedin.com/in/samuel-growther",
+    ],
   },
 };
 
